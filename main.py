@@ -59,7 +59,7 @@ def enviar_alerta_discord(versao, tipo):
     resposta = requests.post(WEBHOOK_URL, json=mensagem)
 
     if resposta.status_code == 204:
-        print("Sucesso! Alerta enviado no Discord.")
+        print("Sucesso! Alerta enviado no Discord..")
     else:
         print(f"Falha ao enviar o alerta para o Discord. Status: {resposta.status_code}")
 
